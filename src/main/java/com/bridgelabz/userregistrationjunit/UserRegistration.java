@@ -33,4 +33,18 @@ public class UserRegistration {
         matcher = pattern.matcher(name);
         return matcher.matches();
     }
+
+    /**
+     *
+     * @param name return boolean value
+     * method email validation to validation of the email
+     */
+
+    public boolean emailValidation(String name){
+        String regex = "^[a-z0-9]{3,}+([_+-.][a-z0-9]{3,}+)*@[a-z0-9]+.[a-z]{2,3}+(.[a-z][2,3]){0,1}$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(name);
+        return matcher.matches();
+    }
 }
+
