@@ -46,5 +46,16 @@ public class UserRegistration {
         matcher = pattern.matcher(name);
         return matcher.matches();
     }
+
+    /* method to validation of mobile number data
+     * @param name return boolean value
+     */
+    public boolean numberValidation(String number){
+        String regex = "^[0-9]{2}\\s[0-9]{10}";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(number);
+        return matcher.matches();
+    }
 }
+
 
