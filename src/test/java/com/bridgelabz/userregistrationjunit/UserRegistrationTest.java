@@ -66,12 +66,23 @@ public class UserRegistrationTest {
 
     @Test
     public void givenRule3Value_WhenProper_ShouldReturnTrue(){
-        boolean result = userRegistration.loginRule3Validation("Laoqo1rpnm");
+        boolean result = userRegistration.loginValidationOneNumber("Laoqo1rpnm");
         Assertions.assertTrue(result);
     }
     @Test
     public void givenRule3Values_WhenNotProper_ShouldReturnFalse(){
-        boolean result = userRegistration.loginRule3Validation("aqLawhrpnm");
+        boolean result = userRegistration.loginValidationOneNumber("aqLawhrpnm");
+        Assertions.assertFalse(result);
+    }
+
+    @Test
+    public void givenRule4Values_WhenProper_ShouldReturnTrue(){
+        boolean result = userRegistration.loginValidationOneSpecialCharacter("adqe1aaL@fp");
+        Assertions.assertTrue(result);
+    }
+    @Test
+    public void givenRule4Values_WhenNotProper_ShouldReturnFalse(){
+        boolean result = userRegistration.loginValidationOneSpecialCharacter("awwfleropnm");
         Assertions.assertFalse(result);
     }
 }
