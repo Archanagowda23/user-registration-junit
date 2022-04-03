@@ -53,6 +53,16 @@ public class UserRegistrationTest {
         boolean result = userRegistration.loginValidation("aqropnm");
         Assertions.assertFalse(result);
     }
+
+    @Test
+    public void givenRule2Value_WhenProper_ShouldReturnTrue(){
+        boolean result = userRegistration.loginValidationOneUpperCase("Logaqaaopnm");
+        Assertions.assertTrue(result);
+    }
+    @Test
+    public void givenRule2Values_WhenNotProper_ShouldReturnFalse(){
+        boolean result = userRegistration.loginValidationOneUpperCase("addqeghopnm");
+    }
 }
 
 

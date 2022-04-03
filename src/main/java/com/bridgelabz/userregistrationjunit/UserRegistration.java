@@ -66,6 +66,14 @@ public class UserRegistration {
         return matcher.matches();
     }
 
+    //create method to validation one or greater digit value data
+    public boolean loginValidationOneUpperCase(String name){
+        String regex = "(?=.*[A-Z]){1}(?=.*[0-9])(?=.*[a-z]).{8,}$";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(name);
+        return matcher.matches();
+    }
+
 }
 
 
