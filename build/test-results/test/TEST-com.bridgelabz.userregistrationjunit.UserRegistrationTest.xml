@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.userregistrationjunit.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-03T07:00:00" hostname="DESKTOP-4E0R7JF" time="0.038">
+<testsuite name="com.bridgelabz.userregistrationjunit.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-03T07:11:16" hostname="DESKTOP-4E0R7JF" time="0.045">
   <properties/>
-  <testcase name="giveLastName_WhenProper_ShouldReturnTrue()" classname="com.bridgelabz.userregistrationjunit.UserRegistrationTest" time="0.038"/>
+  <testcase name="giveEmailVaule_WhenProper_ShouldReturnTrue()" classname="com.bridgelabz.userregistrationjunit.UserRegistrationTest" time="0.045"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
